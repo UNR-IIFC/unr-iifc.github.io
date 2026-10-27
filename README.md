@@ -2,6 +2,21 @@
 
 Website for the Independent Interfraternity Council at the University of Nevada, Reno.
 
+- **Live site:** https://unr-iifc.github.io
+- **Code:** https://github.com/UNR-IIFC/unr-iifc.github.io (owned by the UNR-IIFC GitHub organization, not any one person)
+- Changes pushed to the `main` branch go live in 1–2 minutes.
+
+## Handing off to the next board
+
+Do this each December after elections:
+
+1. An outgoing owner invites the new president (and the VP of Administration) to the
+   **UNR-IIFC** organization on GitHub with the **Owner** role: *People → Invite member*.
+2. Once they accept, remove owners who are graduating. Always keep at least two owners.
+3. Update the officers in `assets/js/data.js` and add new headshots to `assets/img/officers/`.
+4. Hand over the council Gmail (nevadaiifcpresident@gmail.com). It's the organization's
+   contact email and should own anything else the site depends on, like the complaint form.
+
 ## Updating the site
 
 Almost everything you'll want to change lives in **`assets/js/data.js`**:
