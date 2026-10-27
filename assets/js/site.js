@@ -113,7 +113,7 @@
   }).join(""));
 
   // Resources page
-  fill("resource-list", (data.resources || []).map(function (d) {
+  function docItem(d) {
     var meta = "PDF" + (d.pages ? ", " + d.pages + " pages" : "");
     return '<li class="doc">' +
       '<h3>' + esc(d.title) + '</h3>' +
@@ -124,7 +124,12 @@
         '<span class="meta">' + meta + '</span>' +
       '</div>' +
       '</li>';
-  }).join(""));
+  }
+  function docsIn(section) {
+    return (data.resources || []).filter(function (d) { return (d.section || "governing") === section; });
+  }
+  fill("resource-list", docsIn("governing").map(docItem).join(""));
+  fill("scholarship-list", docsIn("scholarships").map(docItem).join(""));
 
   // Contact details: footer on every page, plus the Contact page
   var c = data.council;

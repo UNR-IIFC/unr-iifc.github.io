@@ -122,18 +122,28 @@ window.IIFC = {
   },
 
   // Documents on the Resources page. Put PDFs in assets/docs/.
+  // "section" is "governing" or "scholarships" and decides which list it appears in.
   resources: [
     {
+      section: "governing",
       title: "Constitution",
       description: "Our mission and purpose, who can join the council, and how the general body, executive board, and judicial committee work.",
       file: "assets/docs/iifc-constitution.pdf",
       pages: 10
     },
     {
+      section: "governing",
       title: "Bylaws",
       description: "Officer duties, finances and dues, the code of conduct, the judicial process, and our expansion and recruitment policies.",
       file: "assets/docs/iifc-bylaws.pdf",
       pages: 18
+    },
+    {
+      section: "scholarships",
+      title: "Scholarship Guide",
+      description: "National scholarships offered by each of our six chapters' fraternities, with award amounts, eligibility, and links to apply.",
+      file: "assets/docs/iifc-scholarship-guide.pdf",
+      pages: 7
     }
   ],
 
